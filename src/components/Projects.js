@@ -15,10 +15,14 @@ const styles = {
 
   line: {
     border: '1px solid black',
-    width: "30px"
-    
+    width: "30px",
+    margin: "6px",
+  },  
 
-  }  
+  subHeader: {
+    fontWeight: 200,
+    fontSize: "20px",
+  }
 }
 
 export default function Projects() {
@@ -27,7 +31,7 @@ export default function Projects() {
       <div style={styles.texts}>
         <h2>Projects</h2>
         <div style={styles.line}></div>
-        <h4>Here you will find some of the personal and clients projects that I created</h4>
+        <p style={styles.subHeader}>Here you will find some of the personal and clients projects that I created</p>
       </div>
       <div>
         <Row>

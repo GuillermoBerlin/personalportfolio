@@ -7,65 +7,59 @@ const Project = () => {
   const [hovered, setHovered] = useState(false);
 
   const styles = {
-
     img: {
       width: "400px",
       height: "300px",
-      filter: hovered ? "blur(2px)" : "none",
+      filter: hovered ? "blur(1.5px)" : "none",
     },
-
     imgContainer: {
-        position: "relative",
-        display: "inlineBlock",
-        textAlign: "right",
-        //border: '1px solid red'
-      },
-      
-      buttonContainer: {
-        position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)", 
-        //border: '1px solid red',
-        
-      },
-
-      colLeft: {
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "flex-end",
-        marginRight: "20px",
-        
-      },
-
+      position: "relative",
+      display: "inline-block",
+      textAlign: "right",
+    },
+    buttonContainer: {
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)", 
+    },
+    colLeft: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "flex-end",
+      marginRight: "20px",
+    },
     colRight: {
       marginLeft: "20px",
     },
-
     button: {
       display: hovered ? "block" : "none",
       margin: "12px",
       width: "150px",
-      borderRadius: '50px'
-      
+      borderRadius: '50px',
+      border: "none",
     },
-
     pills: {
       display: 'flex',
-      gap: "10px"
+      gap: "10px",
     },
-
     paragraph: {
       lineHeight: "1.5",
       maxWidth: "400px",
       marginTop: "15px",
       marginBottom: "15px",
+      lineHeight: "140%",
+      fontWeight: 200,
+      marginTop: "0px",
+      marginBottom: "25px",
+    },
+    row: {
+      marginBottom: "50px"
     }
-
   };
 
   return (
-    <Row className="d-flex align-items-center">
+    <Row style={styles.row} className="d-flex align-items-center">
       <Col  style={styles.colLeft}>
 
       <div style={styles.imgContainer}
@@ -75,7 +69,7 @@ const Project = () => {
 
         <Image 
           style={styles.img} 
-          src="https://play-lh.googleusercontent.com/bvDutfn9Rcf8_38yAIRuwg-ivbSSe2NCrNS3AnFtOIFYEKPgEvx8yL_8_btZFaAsyTwR"  
+          src="https://wpleaders.com/wp-content/uploads/2021/05/WPBeginner.png"  
         />
         
         <div style={styles.buttonContainer} onMouseEnter={() => setHovered(true)}> 
@@ -86,7 +80,7 @@ const Project = () => {
         
       </Col>
       <Col style={styles.colRight}>
-        <h3>Dopefolio</h3>
+        <h4>Dopefolio</h4>
         <p style={styles.paragraph}>Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally
         </p>
         <div style={styles.pills}>

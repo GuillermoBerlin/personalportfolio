@@ -1,20 +1,14 @@
 import Container from 'react-bootstrap/Container';
-import {Row, Col} from 'react-bootstrap'
 import Projects from './components/Projects';
-
+import Header from './components/Header';
 
 function App() {
+
   return (
     <>
-    <Container>
-     
-        <h2>
-          AppJs
-        </h2>
-       <Projects/> 
-          
-        
-        
+    <Container>     
+      <Header/>  
+      <Projects/>    
     </Container>
   </>
   );

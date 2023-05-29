@@ -10,7 +10,7 @@ const Project = () => {
     img: {
       width: "400px",
       height: "300px",
-      filter: hovered ? "blur(1.5px)" : "none",
+      filter: hovered ? "blur(2px)" : "none",
     },
     imgContainer: {
       position: "relative",
@@ -35,7 +35,7 @@ const Project = () => {
     button: {
       display: hovered ? "block" : "none",
       margin: "12px",
-      width: "150px",
+      width: "160px",
       borderRadius: '50px',
       border: "none",
     },
@@ -51,10 +51,17 @@ const Project = () => {
       lineHeight: "140%",
       fontWeight: 200,
       marginTop: "0px",
-      marginBottom: "25px",
+      marginBottom: "35px",
     },
     row: {
       marginBottom: "50px"
+    },
+    seeTheCode: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+      gap: "5px"
     }
   };
 
@@ -74,9 +81,9 @@ const Project = () => {
         
         <div style={styles.buttonContainer} onMouseEnter={() => setHovered(true)}> 
         <Button variant="outline-dark" className="btn-light" style={styles.button}>Visit Website</Button>
-        <Button variant="outline-dark" className="btn-light" style={styles.button}>See the code <GitHubIcon fontSize="small"/></Button>
+        <Button variant="outline-dark" className="btn-light" style={styles.button}><div style={styles.seeTheCode}>See the code <GitHubIcon fontSize="small"/></div></Button>
         </div>
-        </div>
+      </div>
         
       </Col>
       <Col style={styles.colRight}>

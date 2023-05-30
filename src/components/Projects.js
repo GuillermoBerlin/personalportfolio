@@ -1,6 +1,5 @@
 import React from 'react';
 import Project from './Project';
-import { Row, Col } from 'react-bootstrap';
 import './Projects.css';
 
 const styles = {

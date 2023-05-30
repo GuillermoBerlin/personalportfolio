@@ -1,0 +1,21 @@
+img{
+    width: 400px;
+    height: 300px;
+}
+.imgContainer {
+    position: "relative";
+    display: "inline-block";
+    text-align: "right";
+}
+@media (max-width: 430px) {
+    img{
+        width: 100%;
+        height: 250px;
+    }
+}
+@media (max-width: 380px) {
+    img{
+        width: 100%;
+        height: 230px;
+    }
+}

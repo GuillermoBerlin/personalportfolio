@@ -1,0 +1,22 @@
+.main-div{
+    padding-left: 13%;
+}
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    width: 30px;
+    display: inline-block;
+    height: 30px;
+}
+.github-icon{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+@media (max-width: 1199px) {
+    .main-div{
+        padding-left: 0;
+    }
+}

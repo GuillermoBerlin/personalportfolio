@@ -1,0 +1,9 @@
+.project-container{
+    padding-left: 13%;
+}
+@media (max-width: 1199px) {
+    .project-container{
+        padding-left: 0;
+    }
+}
+  

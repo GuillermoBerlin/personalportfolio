@@ -38,17 +38,17 @@ const Project = () => {
       width: "160px",
       borderRadius: '50px',
       border: "none",
+      boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
     },
     pills: {
       display: 'flex',
       gap: "10px",
     },
     paragraph: {
-      lineHeight: "1.5",
       maxWidth: "400px",
       marginTop: "15px",
       marginBottom: "15px",
-      lineHeight: "140%",
+      lineHeight: "180%",
       fontWeight: 200,
       marginTop: "0px",
       marginBottom: "35px",
@@ -62,7 +62,12 @@ const Project = () => {
       justifyContent: "center",
       alignItems: "center",
       gap: "5px"
-    }
+    },
+    pill: {
+      padding: "6px 17px",
+      backgroundColor: 'red',
+      fontWeight: '500',  
+    },
   };
 
   return (
@@ -91,9 +96,9 @@ const Project = () => {
         <p style={styles.paragraph}>Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally
         </p>
         <div style={styles.pills}>
-          <Badge pill bg="secondary" className="mt-2 mb-2">React</Badge>
-          <Badge pill bg="secondary" className="mt-2 mb-2">Node</Badge>
-          <Badge pill bg="secondary" className="mt-2 mb-2">MongoDB</Badge>
+          <Badge pill bg="secondary" className="mt-2 mb-2" style={styles.pill}>React</Badge>
+          <Badge pill bg="secondary" className="mt-2 mb-2" style={styles.pill}>Node</Badge>
+          <Badge pill bg="secondary" className="mt-2 mb-2" style={styles.pill}>ExpressJS</Badge>
         </div>
       </Col>
     </Row>    

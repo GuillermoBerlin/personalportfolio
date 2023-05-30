@@ -18,8 +18,8 @@ export default function Header() {
   const styles = {
     mainDiv: {
       marginTop: '100px',
-      borderRadius: 'solid 1px red',
-      marginLeft: '220px',
+      display: "flex",
+      flexDirection: "column",
     },
     subHeader: {
       fontWeight: 200,
@@ -33,7 +33,7 @@ export default function Header() {
     icon: {
       fontSize: '30px',
       marginRight: '17px',
-      color: 'black', // Establece el color en negro
+      color: 'black', 
       cursor: 'pointer',
     },
   };

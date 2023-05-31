@@ -1,11 +1,11 @@
 import React from 'react';
 import Project from './Project';
-import { Row, Col } from 'react-bootstrap';
+import './Projects.css';
 
 const styles = {
   texts: {
     marginTop: "60px",
-    marginBottom: "30px",
+    marginBottom: "60px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -19,6 +19,7 @@ const styles = {
   subHeader: {
     fontWeight: 200,
     fontSize: "20px",
+    textAlign: "center",
   },
   row: {
     marginBottom: "50px",
@@ -30,18 +31,14 @@ export default function Projects() {
   return (
     <>
       <div style={styles.texts}>
-        <h2>Projects</h2>
+        <h2 className='blue-color'>Projects</h2>
         <div style={styles.line}></div>
         <p style={styles.subHeader}>Here you will find some of the personal and client projects that I created</p>
       </div>
-      <div>
-        <Row style={styles.row}>
-          <Col>
-            <Project/>
-            <Project/>
-            <Project/>
-          </Col>
-        </Row>
+      <div className='project-container'>
+        <Project/>
+        <Project/>
+        <Project/>
       </div>
     </>
   );

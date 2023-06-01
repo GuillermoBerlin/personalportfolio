@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Row, Col, Image, Button, Badge } from 'react-bootstrap';
+import { Row, Col, Image, Button, } from 'react-bootstrap';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import useWindowSize from './useWindowSize';
 import './Project.css';
+import BadgePill from './BadgePill';
 
-const Project = () => {
+const Project = (props) => {
   
   const [hovered, setHovered] = useState(false);
   const windowSize = useWindowSize();
@@ -48,12 +49,9 @@ const Project = () => {
     },
     
     paragraph: {
-      lineHeight: "1.5",
-      marginTop: "15px",
-      marginBottom: "15px",
+      //marginTop: "15px",
       lineHeight: "180%",
       fontWeight: 200,
-      marginTop: "0px",
       marginBottom: "35px",
     },
     row: {
@@ -66,10 +64,7 @@ const Project = () => {
       alignItems: "center",
       gap: "5px"
     },
-    pill: {
-      padding: "6px 17px",
-      fontWeight: '500',  
-    },
+   
   };
 
   return (
@@ -79,12 +74,12 @@ const Project = () => {
       <div
            onMouseEnter={() => setHovered(true)}
            onMouseLeave={() => setHovered(false)}
-        className='img-container'
+           className='img-container'
             >
 
         <Image 
           style={styles.img} 
-          src="https://wpleaders.com/wp-content/uploads/2021/05/WPBeginner.png"  
+          src={props.image}  
         />
         
         {windowSize.width < 700 ? <div style={styles.mobileButtonContainer}>
@@ -100,13 +95,14 @@ const Project = () => {
         
       </Col>
       <Col className='d-flex flex-column  p-0 p-sm-5 pt-0 pb-0 pt-sm-0 pb-sm-0 p-md-4 mt-4 mt-md-0 align-items-center align-items-lg-start info-container'>
-        <h4 className='blue-color title'>Dopefolio</h4>
-        <p style={styles.paragraph}>Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally
-        </p>
+        <h4 className='blue-color title'>{props.title}</h4>
+        <p style={styles.paragraph}>{props.text}</p>
         <div style={styles.pills} className='pills'>
-          <Badge pill bg="secondary" className="mt-2 mb-2" style={styles.pill}>React</Badge>
-          <Badge pill bg="secondary" className="mt-2 mb-2" style={styles.pill}>Node</Badge>
-          <Badge pill bg="secondary" className="mt-2 mb-2" style={styles.pill}>MongoDB</Badge>
+          {props.badgePills.map(pill => 
+            <BadgePill
+              label={pill}
+            />
+          )}
         </div>
       </Col>
     </Row>    

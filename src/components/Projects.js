@@ -36,9 +36,12 @@ export default function Projects() {
         <p style={styles.subHeader}>Here you will find some of the personal and client projects that I created</p>
       </div>
       <div className='project-container'>
-        <Project/>
-        <Project/>
-        <Project/>
+        <Project 
+          title={"Algo"} 
+          text={"Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"}
+          image={"https://wpleaders.com/wp-content/uploads/2021/05/WPBeginner.png"}
+          badgePills={["React", "Node"]}
+        />  
       </div>
     </>
   );

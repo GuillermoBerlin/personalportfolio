@@ -13,6 +13,7 @@ const Project = (props) => {
   const styles = {
     img: {
       filter: hovered && windowSize.width > 700 ? "blur(2px)" : "none",
+      
     },
     buttonContainer: {
       position: "absolute",

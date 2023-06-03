@@ -4,6 +4,7 @@
 
 body {
   background-color: #EEEEEE; 
+  /*#f9f9f9*/
 }
 
 .App-logo {
@@ -42,5 +43,5 @@ body {
 }
 /* CONSTANTES DE COLOR */
 .blue-color{
-  color:#1E1ECC;
+  color:#212429;
 }

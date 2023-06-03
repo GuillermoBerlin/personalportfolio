@@ -37,9 +37,9 @@ export default function Projects() {
       </div>
       <div className='project-container'>
         <Project 
-          title={"Algo"} 
-          text={"Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally"}
-          image={"https://wpleaders.com/wp-content/uploads/2021/05/WPBeginner.png"}
+          title={"Vocal Coach Portfolio"} 
+          text={"React Portfolio with CSS Animations and EmailJS integration, designed for a vocal coach. Showcasing her work and teaching approach, allowing potential students to explore her talent and expertise."}
+          image={require('../images/Component 7.png')}
           badgePills={["React", "Node"]}
         />  
       </div>

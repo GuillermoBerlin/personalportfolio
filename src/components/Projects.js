@@ -40,8 +40,14 @@ export default function Projects() {
           title={"Vocal Coach Portfolio"} 
           text={"React Portfolio with CSS Animations and EmailJS integration, designed for a vocal coach. Showcasing her work and teaching approach, allowing potential students to explore her talent and expertise."}
           image={require('../images/Component 7.png')}
-          badgePills={["React", "Node"]}
-        />  
+          badgePills={["React", "Tailwind CSS"]}
+        />
+        <Project 
+          title={"MERN Ecommerce Project"} 
+          text={"This project is an ecommerce website built using the MERN stack. It includes features for user authentication and login, allowing both administrators and regular users to access their respective accounts. "}
+          image={require('../images/Imagen_rolonode.png')}
+          badgePills={["React", "Node", "Express", "MongoDB", "Bootstrap"]}
+        />    
       </div>
     </>
   );

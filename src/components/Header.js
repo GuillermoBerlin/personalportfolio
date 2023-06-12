@@ -16,42 +16,21 @@ export default function Header() {
     window.location.href = mailtoLink;
   };
 
-  const styles = {
-    mainDiv: {
-      marginTop: '100px',
-      borderRadius: 'solid 1px red',
-    },
-    subHeader: {
-      fontWeight: 200,
-      fontSize: '20px',
-      marginBottom: '0px',
-    },
-    icons: {
-      marginTop: '30px',
-      marginLeft: '0px',
-    },
-    icon: {
-      fontSize: '30px',
-      color: 'black', 
-      cursor: 'pointer',
-    },
-  };
-
   return (
-    <div style={styles.mainDiv} className='text-center text-lg-start main-div'>
+    <div className='text-center text-lg-start main-div'>
       <h3>Hi, my name is</h3>
-      <h1 className='blue-color'>Guillermo Lescano</h1>
-      <h1 className='blue-color'>I'm a Full Stack Developer.</h1>
-      <p style={styles.subHeader}>I´m a software developer based in Berlin, Germany.</p>
-      <p style={styles.subHeader}>Currently, I’m focused on building responsive web and mobile applications.</p>
-      <div style={styles.icons} className='icons-container'>
-        <a href="https://www.linkedin.com/in/guillermo-lescano/" target="_blank" rel='noreferrer' className='linkedin-icon icon'>
-          <LinkedInIcon style={{ ...styles.icon, color: 'black' }} />
+      <h1>Guillermo Lescano</h1>
+      <h1>I'm a Full Stack Developer.</h1>
+      <p>I´m a software developer based in Berlin, Germany.</p>
+      <p>Currently, I’m focused on building responsive web and mobile applications.</p>
+      <div className='icons-container'>
+        <a href="https://www.linkedin.com/in/guillermo-lescano/" target="_blank" rel='noreferrer' >
+          <LinkedInIcon className='header-icon'/>
         </a>
-        <a href="https://github.com/GuillermoBerlin" target="_blank" rel='noreferrer' className='github-icon icon'>
-          <GitHubIcon style={{ ...styles.icon, color: 'black' }} />
+        <a href="https://github.com/GuillermoBerlin" target="_blank" rel='noreferrer' >
+          <GitHubIcon className='header-icon'/>
         </a>
-        <EmailIcon style={styles.icon} onClick={handleEmailClick} className='email-icon icon'/>
+        <EmailIcon onClick={handleEmailClick} className='header-icon'/>
       </div>
     </div>
   );

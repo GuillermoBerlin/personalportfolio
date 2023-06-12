@@ -13,17 +13,9 @@ const Project = (props) => {
   const styles = {
     img: {
       filter: hovered && windowSize.width > 700 ? "blur(2px)" : "none",
-      
     },
-    buttonContainer: {
-      position: "absolute",
-    },
-    mobileButtonContainer: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      marginTop: "20px",
-    },
+    
+    
     colLeft: {
       display: "flex",
       flexDirection: "row",
@@ -83,11 +75,12 @@ const Project = (props) => {
           src={props.image}  
         />
         
-        {windowSize.width < 700 ? <div style={styles.mobileButtonContainer}>
+        {windowSize.width < 700 ? <div className='mobile-button-container'>
           <Button variant="outline-dark" className="btn-light" style={styles.mobileButton}>Visit Website</Button>
           <Button variant="outline-dark" className="btn-light" style={styles.mobileButton}><div style={styles.seeTheCode}>See the code <GitHubIcon fontSize="small"/></div></Button>
         </div> :
-        <div style={styles.buttonContainer} onMouseEnter={() => setHovered(true)}> 
+
+        <div className='button-container' onMouseEnter={() => setHovered(true)}> 
           <Button variant="outline-dark" className="btn-light" style={styles.button}>Visit Website</Button>
           <Button variant="outline-dark" className="btn-light" style={styles.button}><div style={styles.seeTheCode}>See the code <GitHubIcon fontSize="small"/></div></Button>
         </div>}

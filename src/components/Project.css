@@ -16,7 +16,20 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: red solid 3px;
 }
+.button-container{
+    position: absolute;
+    border: red solid 3px;
+}
+.mobile-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
 @media (max-width: 991px) {
     .img-container {
         display: flex;

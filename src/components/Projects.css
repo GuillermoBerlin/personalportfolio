@@ -1,9 +1,42 @@
+.text-container{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container h2{
+    color: var(--main-color);
+}    
+
+.line{
+    border: 1px solid;
+    width: 30px;
+    margin: 6px;
+    color: var(--main-color);
+}
+
+.text-container p{
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+}
+
+
 .project-container{
     padding-left: 13%;
 }
+
 @media (max-width: 1199px) {
     .project-container{
         padding-left: 0;
     }
+
+    .text-container{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }    
 }
   

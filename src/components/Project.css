@@ -1,47 +1,62 @@
-img{
-    width: 480px;
-    height: 300px;
-}
-.title{
-    width: 400px;
-}
-.info-container p{
-    width: 400px;
-    max-width: 400px;
-}
-.info-container .pills{
-    width: 400px;
-}
+/*Left column*/
+
 .img-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: red solid 3px;
+}
+img{
+    max-width: 480px;
+    height: auto;
 }
 .button-container{
     position: absolute;
-    border: red solid 3px;
+    margin-left: 120px;
+    margin-top: 80px;
 }
 .mobile-button-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    gap: 0px;
 }
 
+/*Right column*/
 
-@media (max-width: 991px) {
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+.project-title{
+    width: 400px;
+    color: var(--main-color);
+}
+.project-paragraph {
+    line-height: 180%;
+    font-weight: 200;
+    margin-bottom: 35px;
+} 
+
+@media (max-width: 700px) {
     .img-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center;   
     }
+    .info-container {
+        margin-top: 15px;
+    }  
 }
-@media (max-width: 430px) {
+@media (max-width: 500px) {
     img{
-        width: 100%;
-        height: 250px;
+        width: 95%;
+        height: auto;
     }
 }
 @media (max-width: 415px) {
@@ -51,10 +66,7 @@ img{
     .info-container p{
         width: 390px;
         max-width: 390px;
-    }
-    .info-container .pills{
-        width: 390px;
-    }
+    } 
 }
 @media (max-width: 405px) {
     .title{
@@ -64,9 +76,6 @@ img{
         width: 385px;
         max-width: 385px;
     }
-    .info-container .pills{
-        width: 385px;
-    }
 }
 @media (max-width: 400px) {
     .title{
@@ -75,10 +84,7 @@ img{
     .info-container p{
         width: 375px;
         max-width: 375px;
-    }
-    .info-container .pills{
-        width: 375px;
-    }
+    } 
 }
 @media (max-width: 380px) {
     .img-container{
@@ -86,17 +92,11 @@ img{
     }
     img{
         width: 95%;
-        height: 230px;
-    }
-    .title{
-        width: 360px;
+        height: auto;  
     }
     .info-container p{
         width: 360px;
         max-width: 360px;
-    }
-    .info-container .pills{
-        width: 360px;
     }
 }
 @media (max-width: 376px) {
@@ -106,8 +106,5 @@ img{
     .info-container p{
         width: 355px;
         max-width: 355px;
-    }
-    .info-container .pills{
-        width: 355px;
-    }
+    } 
 }

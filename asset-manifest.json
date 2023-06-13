@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/personalportfolio/static/css/main.b5054b9f.css",
-    "main.js": "/personalportfolio/static/js/main.f26cfe79.js",
+    "main.css": "/personalportfolio/static/css/main.2aa65e11.css",
+    "main.js": "/personalportfolio/static/js/main.d0f3d8ff.js",
     "static/js/787.0dbfb0b1.chunk.js": "/personalportfolio/static/js/787.0dbfb0b1.chunk.js",
     "static/media/Imagen_rolonode.png": "/personalportfolio/static/media/Imagen_rolonode.033863768bc66ed7ce91.png",
     "static/media/Component 7.png": "/personalportfolio/static/media/Component 7.811b8a48df1d23ca5431.png",
     "index.html": "/personalportfolio/index.html",
-    "main.b5054b9f.css.map": "/personalportfolio/static/css/main.b5054b9f.css.map",
-    "main.f26cfe79.js.map": "/personalportfolio/static/js/main.f26cfe79.js.map",
+    "main.2aa65e11.css.map": "/personalportfolio/static/css/main.2aa65e11.css.map",
+    "main.d0f3d8ff.js.map": "/personalportfolio/static/js/main.d0f3d8ff.js.map",
     "787.0dbfb0b1.chunk.js.map": "/personalportfolio/static/js/787.0dbfb0b1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5054b9f.css",
-    "static/js/main.f26cfe79.js"
+    "static/css/main.2aa65e11.css",
+    "static/js/main.d0f3d8ff.js"
   ]
 }

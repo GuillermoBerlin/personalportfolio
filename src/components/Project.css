@@ -1,9 +1,9 @@
 /*Left column*/
 
-.img-container {
+.project-image-container {
     display: flex;
 }
-img{
+.project-image{
     max-width: 480px;
     height: auto;
 }
@@ -11,6 +11,7 @@ img{
     position: absolute;
     margin-left: 120px;
     margin-top: 80px;
+    
 }
 .mobile-button-container{
     display: flex;
@@ -19,19 +20,14 @@ img{
     gap: 0px;
 }
 
+
 /*Right column*/
 
-.info-container {
+.project-text-container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    
 }
-.pill-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
 .project-title{
     width: 400px;
     color: var(--main-color);
@@ -41,70 +37,36 @@ img{
     font-weight: 200;
     margin-bottom: 35px;
 } 
+.pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
 @media (max-width: 700px) {
-    .img-container {
+    .project-image-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;   
     }
-    .info-container {
+    .project-text-container{
         margin-top: 15px;
     }  
 }
 @media (max-width: 500px) {
-    img{
-        width: 95%;
+    .project-image{
+        width: 100%;
         height: auto;
     }
 }
-@media (max-width: 415px) {
-    .title{
-        width: 390px;
-    }
-    .info-container p{
-        width: 390px;
-        max-width: 390px;
-    } 
-}
-@media (max-width: 405px) {
-    .title{
-        width: 385px;
-    }
-    .info-container p{
-        width: 385px;
-        max-width: 385px;
-    }
-}
-@media (max-width: 400px) {
-    .title{
-        width: 375px;
-    }
-    .info-container p{
-        width: 375px;
-        max-width: 375px;
-    } 
-}
 @media (max-width: 380px) {
-    .img-container{
+    .project-image-container{
         text-align: center;
     }
-    img{
+    .project-image{
         width: 95%;
         height: auto;  
     }
-    .info-container p{
-        width: 360px;
-        max-width: 360px;
-    }
 }
-@media (max-width: 376px) {
-    .title{
-        width: 355px;
-    }
-    .info-container p{
-        width: 355px;
-        max-width: 355px;
-    } 
-}
+

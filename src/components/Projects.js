@@ -2,16 +2,15 @@ import React from 'react';
 import Project from './Project';
 import './Projects.css';
 
-
 export default function Projects() {
   return (
     <>
-      <div className='text-container'>
-        <h2>Projects</h2>
+      <div className='projects-text-container'>
+        <h2 className='projects-text-titel'>Projects</h2>
         <div className='line'></div>
-        <p>Here you will find some of the personal and client projects that I created</p>
+        <p className='projects-text-p'>Here you will find some of the personal and client projects that I created</p>
       </div>
-      <div className='project-container'>
+      <div className='projects-components-container'>
         <Project 
           title={"Vocal Coach Portfolio"} 
           text={"React Portfolio with CSS Animations and EmailJS integration, designed for a vocal coach. Showcasing her work and teaching approach, allowing potential students to explore her talent and expertise."}

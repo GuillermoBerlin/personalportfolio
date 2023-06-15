@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Row, Col, Image, Button, } from 'react-bootstrap';
 import useWindowSize from './useWindowSize';
 import './Project.css';
-import BadgePill from './BadgePill';
 import Pill from './Pill';
 
 const Project = (props) => {
@@ -13,6 +12,7 @@ const Project = (props) => {
   const styles = {
     img: {
       filter: hovered && windowSize.width > 700 ? "blur(2px)" : "none",
+      transition: "filter 0.5s ease",
     },
     colLeft: {
       display: "flex",
@@ -29,7 +29,7 @@ const Project = (props) => {
     },
     mobileButton:{
       margin: "12px",
-      width: "150px",
+      padding: "5px 15px",
       borderRadius: '50px',
       border: "none",
       boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
@@ -46,17 +46,18 @@ const Project = (props) => {
       <div
            onMouseEnter={() => setHovered(true)}
            onMouseLeave={() => setHovered(false)}
-           className='img-container'
+           className='project-image-container'
             >
 
-        <Image 
+        <img
+          className='project-image' 
           style={styles.img} 
           src={props.image}  
         />
         
         {windowSize.width < 700 ? <div className='mobile-button-container'>
           <Button href={props.page} target="_blank"variant="outline-dark" className="btn-light" style={styles.mobileButton}>Visit Website</Button>
-          <Button href={props.code} target="_blank"variant="outline-dark" className="btn-light" style={styles.mobileButton}><div style={styles.seeTheCode}>See the code </div></Button>
+          <Button href={props.code} target="_blank"variant="outline-dark" className="btn-light" style={styles.mobileButton}>See the code</Button>
         </div> :
 
         <div className='button-container' onMouseEnter={() => setHovered(true)}> 
@@ -67,7 +68,7 @@ const Project = (props) => {
       </div>
         
       </Col>
-      <Col className='info-container'>
+      <Col className='project-text-container'>
         <h4 className='project-title'>{props.title}</h4>
         <p className='project-paragraph'>{props.text}</p>
         <div className='pill-container'>

@@ -17,10 +17,8 @@ export default function Pill(props) {
             borderRadius: "10rem",
             backgroundColor: "#B0B0B0",
             color: "#fff",
-
           }
       }
-
 
   return (
     <div style={styles.pill}>
